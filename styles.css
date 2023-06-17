@@ -64,9 +64,12 @@
     text-align: center;
 }
 
-.clear-input{
+.add{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.clear-input{
     background-color: rgb(115, 117, 115);
 }
 
