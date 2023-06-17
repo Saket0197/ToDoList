@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper{
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(150deg, gray, gray, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-container{
+    min-height: 50%;
+    height: fit-content;
+    width: 55%;
+    padding: 0.75rem;
+    background-color: rgb(176, 190, 113);
+    box-shadow: 0px 0px 15px 10px rgb(26, 25, 27);
+}
+
+.add-to-list{
+    background-color: white;
+    height: 15%;
+    display: flex;
+    margin-bottom: 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.item-to-add{
+    padding: 0.45rem;
+    padding-right: 2.75rem;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.item-to-add::placeholder{
+    font-weight: bold;
+}
+
+.btn{
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    background-color: lightgreen;
+    cursor: pointer;
+    padding: 0 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clear-input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(115, 117, 115);
+}
+
+.clear-list{
+    background-color: rgba(53, 56, 53, 0.856);
+}
+
+.items{
+    list-style: none;
+}
+
+.items > li {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    background-color: rgb(1, 18, 29);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa-solid.fa-xmark{
+    padding: 0.15rem 0.25rem;
+    border-radius: 50%;
+    background-color: rgb(255, 123, 0);
+    z-index: 2;
+}
+
+.task-completed{
+    background-color: rgba(1, 18, 29, 0.596);
+    text-decoration: line-through;
+}
