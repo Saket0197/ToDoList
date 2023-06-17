@@ -11,11 +11,11 @@
     <!-- <i class="fa-solid fa-xmark"></i> -->
     <div class="wrapper">
         <div class="to-do-container">
-            <form class="add-to-list" onsubmit="addToList()">
+            <form class="add-to-list" onsubmit="return sub(event)" name="form">
                 <input type="text" placeholder="Start Adding To Your List.." class="item-to-add" autofocus autocomplete="off" spellcheck="false">
+                <button class="btn add">Add to List</button>
                 <button class="btn clear-input">Clear Input</button>
                 <button class="btn clear-list">Clear List</button>
-                <button class="btn add">Add to List</button>
             </form>
 
             <div class="items-container">
